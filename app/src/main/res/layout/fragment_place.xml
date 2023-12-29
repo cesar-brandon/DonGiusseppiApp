@@ -42,7 +42,7 @@
         android:id="@+id/imageView1"
         android:layout_width="283dp"
         android:layout_height="169dp"
-        android:src="@drawable/place_plantas"
+        android:src="@drawable/place_centrico"
         android:translationX="40dp"
         android:translationY="90dp" />
 

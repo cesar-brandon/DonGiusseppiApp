@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.InfoFragment">s
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nosotros"
+        android:textSize="20dp"
+        android:translationX="40dp"
+        android:translationY="40dp"
+        android:textColor="@color/red_700"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="302dp"
+        android:layout_height="418dp"
+        android:text="@string/historia"
+        android:translationY="80dp"
+        android:translationX="40dp"/>
+</FrameLayout>
