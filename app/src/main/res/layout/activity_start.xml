@@ -9,15 +9,16 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="562dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="620dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:translationY="570dp"
+        android:translationY="620dp"
         app:tabBackground="@drawable/tab"
         app:tabGravity="center"
         app:tabIndicatorHeight="0dp"
@@ -25,13 +26,13 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnIngresar"
         style="@style/Widget.Material3.Button"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:text="Ingresar"
         android:textSize="20sp"
-        android:translationX="90dp"
-        android:translationY="640dp" />
+        android:translationX="60dp"
+        android:translationY="680dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
