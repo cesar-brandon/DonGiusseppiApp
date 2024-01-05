@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.PizzaFragment">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pizzas"
-                android:textColor="@color/red_700"
+                android:textColor="@color/primary"
                 android:translationX="40dp"
                 android:textSize="20sp"
                 android:translationY="40dp"/>
@@ -31,7 +29,7 @@
                 android:layout_width="339dp"
                 android:layout_height="916dp"
                 android:src="@drawable/list_pizzas__1_"
-                android:translationY="80dp"
+                android:translationY="50dp"
                 android:translationX="10dp"/>
         </LinearLayout>
     </ScrollView>

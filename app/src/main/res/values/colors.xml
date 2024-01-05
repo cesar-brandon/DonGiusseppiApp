@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red_200">#F61E39</color>
-    <color name="red_500">#F61E39</color>
-    <color name="red_700">#BB0024</color>
-    <color name="teal_200">#2EB39E</color>
-    <color name="teal_700">#148D7A</color>
+    <color name="primary_accent">#F61E39</color>
+    <color name="primary">#BB0024</color>
+    <color name="secondary_accent">#2EB39E</color>
+    <color name="secondary">#148D7A</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

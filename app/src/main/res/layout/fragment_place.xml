@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Nuestras"
         android:textSize="20sp"
-        android:textColor="@color/red_700"
+        android:textColor="@color/primary"
         android:translationX="40dp"
         android:translationY="40dp" />
 

@@ -11,6 +11,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.RecyclerView
 import dongiusseppi.com.databinding.ActivityMainBinding
 import dongiusseppi.com.ui.home.PizzaFragment
 
@@ -27,8 +28,6 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home, R.id.navigation_notifications
@@ -37,17 +36,10 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val imageView: ImageView = findViewById(R.id.imageView5)
+        val pizzaImage: ImageView = findViewById(R.id.imagePizza)
 
-        imageView.setOnClickListener {
-            // Reemplaza MiFragmento::class.java con el nombre de tu fragmento
-            val fragment = PizzaFragment()
-            val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-
-            // Puedes agregar cualquier animación o transición aquí si lo deseas
-            transaction.replace(R.id.nav_host_fragment_activity_main, fragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
+        pizzaImage.setOnClickListener {
+            navController.navigate(R.id.action_navigation_home_to_navigation_pizzas)
         }
 
     }

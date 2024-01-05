@@ -6,7 +6,7 @@
             android:useLevel="false"
             android:thickness="4dp"
             android:innerRadius="0dp">
-            <solid android:color="@color/teal_700"/>
+            <solid android:color="@color/secondary"/>
         </shape>
     </item>
 </selector>

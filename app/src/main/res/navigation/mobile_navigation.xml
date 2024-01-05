@@ -9,11 +9,25 @@
         android:id="@+id/navigation_home"
         android:name="dongiusseppi.com.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_pizzas"
+            app:destination="@id/navigation_pizzas" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="dongiusseppi.com.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_pizzas"
+        android:name="dongiusseppi.com.ui.home.PizzaFragment"
+        android:label="Pizzas"
+        tools:layout="@layout/fragment_pizza" >
+        <action
+            android:id="@+id/action_navigation_pizzas_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>
