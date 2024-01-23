@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DonGiusseppiApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Categorias</string>
+    <string name="favorite">Favoritos</string>
+    <string name="info">Información</string>
+</resources>
