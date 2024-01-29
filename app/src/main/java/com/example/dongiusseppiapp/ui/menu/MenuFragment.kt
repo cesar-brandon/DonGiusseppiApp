@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -16,7 +17,7 @@ import com.example.dongiusseppiapp.ui.menu.adapter.MenuAdapter
 import kotlinx.coroutines.launch
 
 class MenuFragment : Fragment() {
-    private val menuViewModel by viewModels<MenuViewModel>()
+    private val menuViewModel: MenuViewModel by viewModels()
     private lateinit var menuAdapter: MenuAdapter
     private var _binding: FragmentMenuBinding? = null
     private val binding get() = _binding!!
@@ -32,7 +33,9 @@ class MenuFragment : Fragment() {
     }
 
     private fun initList() {
-        menuAdapter = MenuAdapter()
+        menuAdapter = MenuAdapter(onItemSelect = {
+            Toast.makeText(requireContext(), it.name, Toast.LENGTH_SHORT).show()
+        })
 
         binding.rvMenu.apply {
             layoutManager = GridLayoutManager(requireContext(), 2).apply {

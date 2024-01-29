@@ -7,7 +7,11 @@ import com.example.dongiusseppiapp.domain.model.MenuInfo
 
 class MenuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val binding = ItemMenuBinding.bind(view)
-    fun render(MenuInfo: MenuInfo) {
+    fun render(MenuInfo: MenuInfo, onItemSelect: (MenuInfo) -> Unit) {
         binding.ivMenu.setImageResource(MenuInfo.image)
+
+        binding.parent.setOnClickListener {
+            onItemSelect(MenuInfo)
+        }
     }
 }
