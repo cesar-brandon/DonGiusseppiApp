@@ -20,4 +20,9 @@
         android:name="com.example.dongiusseppiapp.ui.info.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.dongiusseppiapp.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
 </navigation>

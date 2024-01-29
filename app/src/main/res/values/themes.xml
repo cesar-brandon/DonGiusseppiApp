@@ -7,7 +7,10 @@
         <item name="colorSecondary">@color/secondary</item>
         <item name="colorSecondaryVariant">@color/secondary_accent</item>
         <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:fontFamily">@font/poppins_medium</item>
     </style>
+
 
     <style name="Theme.DonGiusseppiApp" parent="Base.Theme.DonGiusseppiApp" />
 </resources>

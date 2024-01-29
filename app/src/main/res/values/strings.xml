@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">DonGiusseppiApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="category">Categorias</string>
     <string name="favorite">Favoritos</string>
     <string name="info">Información</string>
+    <string name="menu">Menú</string>
+
+    <string name="americana">Pizza Americana</string>
+    <string name="americana_media">Media Americana</string>
+    <string name="americana_porcion">Porción Americana</string>
+
+    <string name="hawaiana">Pizza Hawaiana</string>
+    <string name="hawaiana_media">Media Hawaiana</string>
+    <string name="hawaiana_porcion">Porción Hawaiana</string>
+
+    <string name="olivo">Pizza de Olivo</string>
+    <string name="olivo_media">Media de Olivo</string>
+    <string name="olivo_porcion">Porción de Olivo</string>
 </resources>

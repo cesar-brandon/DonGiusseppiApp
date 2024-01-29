@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="muted">#F2F2F2</color>
+    <color name="muted_foreground">#FF808080</color>
 
     <color name="primary_accent">#F61E39</color>
     <color name="primary">#BB0024</color>
