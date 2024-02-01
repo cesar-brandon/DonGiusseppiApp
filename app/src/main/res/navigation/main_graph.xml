@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/categoryFragment">
+    app:startDestination="@id/menuFragment">
 
     <fragment
         android:id="@+id/favoriteFragment"
@@ -24,5 +24,18 @@
         android:id="@+id/menuFragment"
         android:name="com.example.dongiusseppiapp.ui.menu.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_productActivity"
+            app:destination="@id/productActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/productActivity"
+        android:name="com.example.dongiusseppiapp.ui.detail.ProductActivity"
+        android:label="activity_product"
+        tools:layout="@layout/activity_product">
+        <argument
+            android:name="type"
+            app:argType="com.example.dongiusseppiapp.domain.model.MenuModel" />
+    </activity>
 </navigation>

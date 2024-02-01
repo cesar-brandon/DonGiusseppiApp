@@ -11,7 +11,15 @@ class MenuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         binding.ivMenu.setImageResource(MenuInfo.image)
 
         binding.parent.setOnClickListener {
-            onItemSelect(MenuInfo)
+            startAnimation(binding.ivMenu, onItemSelect = { onItemSelect(MenuInfo) })
         }
+    }
+
+    fun startAnimation(view: View, onItemSelect: () -> Unit) {
+        view.animate().scaleX(1.1f).scaleY(1.1f).setDuration(200).withEndAction {
+            view.animate().scaleX(1f).scaleY(1f).setDuration(200).withEndAction {
+                onItemSelect()
+            }.start()
+        }.start()
     }
 }

@@ -4,15 +4,24 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dongiusseppiapp.databinding.FragmentMenuBinding
+import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaAmericana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaHawaiana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaOlivo
+import com.example.dongiusseppiapp.domain.model.MenuInfo.Olivos
+import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionAmericana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionHawaiana
+import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionOlivo
+import com.example.dongiusseppiapp.domain.model.MenuModel
 import com.example.dongiusseppiapp.ui.menu.adapter.MenuAdapter
 import kotlinx.coroutines.launch
 
@@ -34,7 +43,20 @@ class MenuFragment : Fragment() {
 
     private fun initList() {
         menuAdapter = MenuAdapter(onItemSelect = {
-            Toast.makeText(requireContext(), it.name, Toast.LENGTH_SHORT).show()
+            val type = when (it) {
+                Americana -> MenuModel.AMERICANA
+                MediaAmericana -> MenuModel.MEDIA_AMERICANA
+                PorcionAmericana -> MenuModel.PORCION_AMERICANA
+                Hawaiana -> MenuModel.HAWAIANA
+                MediaHawaiana -> MenuModel.MEDIA_HAWAIANA
+                PorcionHawaiana -> MenuModel.PORCION_HAWAIANA
+                Olivos -> MenuModel.OLIVO
+                MediaOlivo -> MenuModel.MEDIA_OLIVO
+                PorcionOlivo -> MenuModel.PORCION_OLIVO
+            }
+            findNavController().navigate(
+                MenuFragmentDirections.actionMenuFragmentToProductActivity(type)
+            )
         })
 
         binding.rvMenu.apply {
