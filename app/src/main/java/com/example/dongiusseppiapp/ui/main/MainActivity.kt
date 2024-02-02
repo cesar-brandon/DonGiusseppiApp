@@ -1,4 +1,4 @@
-package com.example.dongiusseppiapp.ui.home
+package com.example.dongiusseppiapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

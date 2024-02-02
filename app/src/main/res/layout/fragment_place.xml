@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.tabs.PlaceFragment">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuestras"
+        android:textColor="@color/md_theme_primary"
+        android:textSize="20sp"
+        android:translationX="40dp"
+        android:translationY="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Zonas"
+        android:textColor="@color/complement"
+        android:translationX="140dp"
+        android:translationY="40dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Céntrico"
+        android:translationX="40dp"
+        android:translationY="90dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primera y Segunda Planta"
+        android:translationX="40dp"
+        android:translationY="250dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tercera Planta"
+        android:translationX="40dp"
+        android:translationY="420dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="283dp"
+        android:layout_height="169dp"
+        android:src="@drawable/place_centrico"
+        android:translationX="40dp"
+        android:translationY="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="282dp"
+        android:layout_height="184dp"
+        android:src="@drawable/place_plantas"
+        android:translationX="40dp"
+        android:translationY="250dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="283dp"
+        android:layout_height="190dp"
+        android:src="@drawable/place_3planta"
+        android:translationX="40dp"
+        android:translationY="420dp" />
+
+
+</FrameLayout>

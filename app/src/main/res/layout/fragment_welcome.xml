@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.tabs.WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/start_logo"
+        android:translationY="-180dp" />
+
+    <ImageView
+        android:id="@+id/chef"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/chef_pizza"
+        android:translationY="240dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+        android:layout_height="129dp"
+        android:text="¡Bienvenido a Pizzeria"
+        android:textSize="28sp"
+        android:translationX="70dp"
+        android:translationY="470dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don"
+        android:textColor="@color/complement"
+        android:textSize="28sp"
+        android:translationX="70dp"
+        android:translationY="550dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giuss"
+        android:textColor="@color/md_theme_secondary"
+        android:textSize="28sp"
+        android:translationX="128dp"
+        android:translationY="550dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eppi!"
+        android:textColor="@color/md_theme_primary"
+        android:textSize="28sp"
+        android:translationX="205dp"
+        android:translationY="550dp" />
+
+</FrameLayout>

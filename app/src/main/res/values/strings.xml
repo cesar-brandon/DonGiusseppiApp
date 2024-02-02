@@ -1,21 +1,50 @@
 <resources>
-    <string name="app_name">DonGiusseppiApp</string>
+    <string name="app_name">Giusseppi</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="category">Categorias</string>
     <string name="favorite">Favoritos</string>
     <string name="info">Información</string>
     <string name="menu">Menú</string>
-
+    <!--AMERICANA-->
     <string name="americana">Pizza Americana</string>
+    <string name="americana_description">Masa crujiente. salsa de tomate. jamón. salami y queso parmesano.</string>
+    <string name="americana_price">54.00</string>
+
     <string name="americana_media">Media Americana</string>
+    <string name="americana_media_description">Masa crujiente, salsa de tomate, jamón, salami y queso parmesano.</string>
+    <string name="americana_media_price">27.00</string>
+
     <string name="americana_porcion">Porción Americana</string>
+    <string name="americana_porcion_description">Masa crujiente, salsa de tomate, jamón, salami y queso parmesano.</string>
+    <string name="americana_porcion_price">4.50</string>
 
+    <!--HAWAIANA-->
     <string name="hawaiana">Pizza Hawaiana</string>
-    <string name="hawaiana_media">Media Hawaiana</string>
-    <string name="hawaiana_porcion">Porción Hawaiana</string>
+    <string name="hawaiana_description">Masa crujiente, salsa de tomate, jamón, piña y queso parmesano.</string>
+    <string name="hawaiana_price">60.00</string>
 
+    <string name="hawaiana_media">Media Hawaiana</string>
+    <string name="hawaiana_media_description">Masa crujiente, salsa de tomate, jamón, piña y queso parmesano.</string>
+    <string name="hawaiana_media_price">30.00</string>
+
+    <string name="hawaiana_porcion">Porción Hawaiana</string>
+    <string name="hawaiana_porcion_description">Masa crujiente, salsa de tomate, jamón, piña y queso parmesano.</string>
+    <string name="hawaiana_porcion_price">5.00</string>
+
+    <!--OLIVO-->
     <string name="olivo">Pizza de Olivo</string>
+    <string name="olivo_description">Masa crujiente, salsa de tomate, jamón, aceituna, y queso parmesano.</string>
+    <string name="olivo_price">60.00</string>
+
     <string name="olivo_media">Media de Olivo</string>
+    <string name="olivo_media_description">Masa crujiente, salsa de tomate, jamón, aceituna, y queso parmesano.</string>
+    <string name="olivo_media_price">30.00</string>
+
     <string name="olivo_porcion">Porción de Olivo</string>
+    <string name="olivo_porcion_description">Masa crujiente, salsa de tomate, jamón, aceituna, y queso parmesano.</string>
+    <string name="olivo_porcion_price">5.00</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
