@@ -100,10 +100,11 @@ class ProductActivity : AppCompatActivity() {
     private fun successState(state: ProductState.Success) {
         lifecycleScope.launch {
             binding.progressBar.isVisible = false
+            binding.ivFavorite.isVisible = true
             binding.tvProductName.text = getString(state.name)
             binding.ivProductImage.setImageResource(state.image)
             binding.tvProductDescription.text = getString(state.description)
-            binding.tvProductPrice.text = getString(state.price)
+            binding.tvProductPrice.text = "S/.${getString(state.price)}"
         }
     }
 }

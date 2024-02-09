@@ -24,11 +24,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ivFavorite"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_background"
+        android:padding="10dp"
+        android:src="@drawable/ic_favorite"
+        android:tint="@color/md_theme_background"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10sp"
+        android:textSize="24sp"
+        android:textColor="@color/md_theme_primary"
+        app:layout_constraintEnd_toStartOf="@+id/tvProductPrice"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivProductImage" />
 
@@ -36,14 +52,20 @@
         android:id="@+id/tvProductPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:textColor="@color/complement"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvProductName"
+        app:layout_constraintStart_toEndOf="@+id/tvProductName"
         app:layout_constraintTop_toBottomOf="@+id/ivProductImage" />
 
     <TextView
         android:id="@+id/tvProductDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="30dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

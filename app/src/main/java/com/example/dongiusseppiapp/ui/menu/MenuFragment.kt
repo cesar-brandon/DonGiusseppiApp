@@ -11,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.bumptech.glide.Glide
 import com.example.dongiusseppiapp.databinding.FragmentMenuBinding
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
@@ -23,6 +24,7 @@ import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionHawaiana
 import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionOlivo
 import com.example.dongiusseppiapp.domain.model.MenuModel
 import com.example.dongiusseppiapp.ui.menu.adapter.MenuAdapter
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MenuFragment : Fragment() {
@@ -75,11 +77,22 @@ class MenuFragment : Fragment() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 menuViewModel.menu.collect { menu ->
+                    binding.ivLoadingPizza.visibility = View.VISIBLE
+
+                    Glide.with(requireContext())
+                        .load(com.example.dongiusseppiapp.R.drawable.loader_pizza)
+                        .into(binding.ivLoadingPizza)
+
+                    delay(2000)
+
                     menuAdapter.updateList(menu)
+
+                    binding.ivLoadingPizza.visibility = View.GONE
                 }
             }
         }
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
