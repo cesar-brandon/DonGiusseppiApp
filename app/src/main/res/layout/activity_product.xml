@@ -42,8 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10sp"
-        android:textSize="24sp"
         android:textColor="@color/md_theme_primary"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/tvProductPrice"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivProductImage" />
@@ -63,36 +63,36 @@
         android:id="@+id/tvProductDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:paddingVertical="15dp"
         android:paddingHorizontal="30dp"
+        android:paddingVertical="15dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvProductName" />
 
-    <!--<ProgressBar
+    <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/progressBar"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:translationY="-50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="lottie_pizza.json"
-        app:lottie_loop="true"
-        app:lottie_speed="1" />
+    <!--    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:translationY="-50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie_pizza.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

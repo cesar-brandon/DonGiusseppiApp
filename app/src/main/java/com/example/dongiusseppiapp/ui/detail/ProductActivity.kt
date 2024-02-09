@@ -93,7 +93,7 @@ class ProductActivity : AppCompatActivity() {
     }
 
     private suspend fun delaySuccessState(state: ProductState.Success) {
-        kotlinx.coroutines.delay(1200)
+        kotlinx.coroutines.delay(1000)
         successState(state)
     }
 

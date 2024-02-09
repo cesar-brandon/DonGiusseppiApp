@@ -77,17 +77,15 @@ class MenuFragment : Fragment() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 menuViewModel.menu.collect { menu ->
-                    binding.ivLoadingPizza.visibility = View.VISIBLE
-
-                    Glide.with(requireContext())
-                        .load(com.example.dongiusseppiapp.R.drawable.loader_pizza)
-                        .into(binding.ivLoadingPizza)
+                    binding.lottieLoading.visibility = View.VISIBLE
+                    binding.rvMenu.visibility = View.INVISIBLE
 
                     delay(2000)
 
+                    binding.rvMenu.visibility = View.VISIBLE
                     menuAdapter.updateList(menu)
 
-                    binding.ivLoadingPizza.visibility = View.GONE
+                    binding.lottieLoading.visibility = View.INVISIBLE
                 }
             }
         }
