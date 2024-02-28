@@ -44,7 +44,14 @@
     <string name="olivo_porcion">Porción de Olivo</string>
     <string name="olivo_porcion_description">Masa crujiente, salsa de tomate, jamón, aceituna, y queso parmesano.</string>
     <string name="olivo_porcion_price">5.00</string>
+
+    <!--TABS-->
     <string name="title_activity_start">StartActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+
+
+    <!--INFORMACION-->
+    <string name="tv_info_giusseppi">Don Giuseppi surgió como una idea hace 20 años, con el propósito de introducir en la ciudad de Chincha una auténtica pizza, similar a las destacadas por su sabor en Argentina. La concepción original fue ofrecer las pizzas en porciones, como estrategia para popularizarlas, darlas a conocer y hacerlas accesibles para todos los bolsillos. El objetivo inicial consistía en proporcionar un producto de excelente sabor, elaborado con ingredientes de primera calidad, a un precio asequible. Esta estrategia permitió mantener la viabilidad del negocio mediante un volumen de ventas elevado, a pesar de contar con un margen de utilidad reducido. La elección y adecuación del local, su decoración y expansión son capítulos aparte en esta historia de éxito. Cada ladrillo, adorno y detalle cuenta con la contribución de un hermano de Chincha que, no solo una vez, sino en numerosas ocasiones, visitó la pizzería, ya sea solo, con amigos o en compañía de la familia. Después de dos décadas, nos enorgullece ver cómo lo que comenzó como una idea se ha convertido en una realidad. Agradecemos profundamente la preferencia y el cariño de nuestra comunidad local y de los turistas que, como clientes pasajeros, nos honran con su presencia cada vez que visitan Chincha. Ustedes son la parte fundamental de este sueño hecho realidad. Agradecemos a la comunidad de Chincha, a todos nuestros clientes por ser parte esencial de la historia de Chincha Pizzería y Heladería "Don Giuseppi".</string>
+
 </resources>
