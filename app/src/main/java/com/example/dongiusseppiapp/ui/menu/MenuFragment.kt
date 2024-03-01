@@ -58,6 +58,9 @@ class MenuFragment : Fragment() {
                 Olivos -> MenuModel.OLIVO
                 MediaOlivo -> MenuModel.MEDIA_OLIVO
                 PorcionOlivo -> MenuModel.PORCION_OLIVO
+                else -> {
+                    throw IllegalArgumentException("Menu not found")
+                }
             }
             findNavController().navigate(
                 MenuFragmentDirections.actionMenuFragmentToProductActivity(type)
