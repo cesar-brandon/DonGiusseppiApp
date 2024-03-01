@@ -51,6 +51,28 @@
     <string name="olivo_porcion_description">Masa crujiente, salsa de tomate, jamón, aceituna, y queso parmesano.</string>
     <string name="olivo_porcion_price">5.00</string>
 
+    <!--POSTRES-->
+    <string name="arroz_con_leche">Arroz con leche</string>
+    <string name="arroz_con_leche_description">Engríete y endulza tu día con un buen dulce preparado con leche.</string>
+    <string name="arroz_con_leche_price">3.00</string>
+
+    <string name="brownies">Brownies</string>
+    <string name="brownies_description">Prueba uno de nuestros postres de calidad, los amarás.</string>
+    <string name="brownies_price">5.50</string>
+
+    <string name="empanadas">Empanadas</string>
+    <string name="empanadas_description">De los mejores ingredientes conseguidos en Chincha, una gran empanada a solo...</string>
+    <string name="empanadas_price">5.00</string>
+
+    <!--HELADOS-->
+    <string name="helado_1_bola">1 Bola</string>
+    <string name="helado_1_bola_description">Helados 100% artesanales de pura fruta, con sabores variados. En cono o vaso</string>
+    <string name="helado_1_bola_price">3.00</string>
+
+    <string name="helado_4_bolas">4 Bolas</string>
+    <string name="helado_4_bolas_description">Copa Fantástica</string>
+    <string name="helado_4_bolas_price">12.50</string>
+
     <!--TABS-->
     <string name="title_activity_start">StartActivity</string>
     <string name="tab_text_1">Tab 1</string>

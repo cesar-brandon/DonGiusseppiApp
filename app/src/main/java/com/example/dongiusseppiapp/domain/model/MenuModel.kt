@@ -9,5 +9,7 @@ enum class MenuModel {
     PORCION_HAWAIANA,
     OLIVO,
     MEDIA_OLIVO,
-    PORCION_OLIVO
+    PORCION_OLIVO,
+    ARROZ_CON_LECHE,
+    HELADO
 }

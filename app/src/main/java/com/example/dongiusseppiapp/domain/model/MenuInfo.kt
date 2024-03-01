@@ -84,4 +84,25 @@ sealed class MenuInfo(
         R.string.olivo_porcion_description,
         R.string.olivo_porcion_price
     )
+
+    // POSTRES
+    data object ArrozConLeche : MenuInfo(
+        R.string.arroz_con_leche,
+        R.drawable.arroz_con_leche,
+        R.drawable.card_postre_arroz_con_leche,
+        R.string.arroz_con_leche_description,
+        R.string.arroz_con_leche_price,
+        "postre"
+    )
+
+    // HELADOS
+    data object Helado1Bola : MenuInfo(
+        R.string.helado_1_bola,
+        R.drawable.helado,
+        R.drawable.card_helado,
+        R.string.helado_1_bola_description,
+        R.string.helado_1_bola_price,
+        "helado"
+    )
+    // BEBIDAS
 }

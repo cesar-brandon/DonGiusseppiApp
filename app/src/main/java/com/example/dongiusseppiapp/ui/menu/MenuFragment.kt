@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.dongiusseppiapp.databinding.FragmentMenuBinding
+import com.example.dongiusseppiapp.domain.model.MenuInfo
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
 import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaAmericana
