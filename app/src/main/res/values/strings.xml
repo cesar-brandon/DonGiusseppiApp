@@ -64,6 +64,13 @@
     <string name="empanadas_description">De los mejores ingredientes conseguidos en Chincha, una gran empanada a solo...</string>
     <string name="empanadas_price">5.00</string>
 
+    <string name="rollos_canela">Rollos de canela</string>
+    <string name="rollos_canela_description"> Rollos con una textura tierna y esponjosa, rellenos de chocolate.</string>
+    <string name="rollos_canela_price">5.50</string>
+
+    <string name="yoggis">Yoggis</string>
+    <string name="yoggis_description">Preparados en el momento, preparados de forma casera.</string>
+    <string name="yoggis_price">3.50</string>
     <!--HELADOS-->
     <string name="helado_1_bola">1 Bola</string>
     <string name="helado_1_bola_description">Helados 100% artesanales de pura fruta, con sabores variados. En cono o vaso</string>
@@ -72,6 +79,39 @@
     <string name="helado_4_bolas">4 Bolas</string>
     <string name="helado_4_bolas_description">Copa Fantástica</string>
     <string name="helado_4_bolas_price">12.50</string>
+
+    <!--BEBIDAS-->
+    <string name="seven_up_personal">7Up Personal</string>
+    <string name="seven_up_personal_description">Tamaño: Personal.</string>
+    <string name="seven_up_personal_price">3.50</string>
+
+    <string name="seven_up_1lt">7Up 1Lt</string>
+    <string name="seven_up_1lt_description">Tamaño: 1Lt.</string>
+    <string name="seven_up_1lt_price">6.00</string>
+
+    <string name="sporade_personal">Sporade Personal</string>
+    <string name="sporade_personal_description">Tamaño: Personal.</string>
+    <string name="sporade_personal_price">3.50</string>
+
+    <string name="coca_cola_personal">Coca Cola Personal</string>
+    <string name="coca_cola_personal_description">Tamaño: Personal.</string>
+    <string name="coca_cola_personal_price">3.50</string>
+
+    <string name="concordia_personal">Concordia Personal</string>
+    <string name="concordia_personal_description">Tamaño: Personal.</string>
+    <string name="concordia_personal_price">1.50</string>
+
+    <string name="concordia_1lt">Concordia 1Lt</string>
+    <string name="concordia_1lt_description">Tamaño: 1Lt.</string>
+    <string name="concordia_1lt_price">6.00</string>
+
+    <string name="fanta_personal">Fanta Personal</string>
+    <string name="fanta_personal_description">Tamaño: Personal.</string>
+    <string name="fanta_personal_price">3.50</string>
+
+    <string name="inca_kola_personal">Inca Kola Personal</string>
+    <string name="inca_kola_personal_description">Tamaño: Personal.</string>
+    <string name="inca_kola_personal_price">3.50</string>
 
     <!--TABS-->
     <string name="title_activity_start">StartActivity</string>

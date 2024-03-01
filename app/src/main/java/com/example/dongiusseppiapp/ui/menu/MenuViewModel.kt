@@ -2,15 +2,7 @@ package com.example.dongiusseppiapp.ui.menu
 
 import androidx.lifecycle.ViewModel
 import com.example.dongiusseppiapp.domain.model.MenuInfo
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaAmericana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaHawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaOlivo
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Olivos
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionAmericana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionHawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionOlivo
+import com.example.dongiusseppiapp.domain.model.MenuInfo.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -42,9 +34,19 @@ class MenuViewModel @Inject constructor() : ViewModel() {
                 PorcionOlivo
             )
 
-            "postre" -> listOf(Hawaiana, MediaHawaiana, PorcionHawaiana)
-            "helado" -> listOf(Olivos, MediaOlivo, PorcionOlivo)
-            "bebida" -> listOf(Americana, Hawaiana, Olivos)
+            "postre" -> listOf(ArrozConLeche, Brownies, Empanadas, RollosCanela, Yoggis)
+            "helado" -> listOf(Helado, Helado4Bolas)
+            "bebida" -> listOf(
+                SevenUpPersonal,
+                SevenUp1Lt,
+                SporadePersonal,
+                CocaColaPersonal,
+                ConcordiaPersonal,
+                Concordia1Lt,
+                FantaPersonal,
+                IncaKolaPersonal,
+            )
+
             else -> emptyList()
         }
     }

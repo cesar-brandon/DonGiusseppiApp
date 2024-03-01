@@ -95,8 +95,44 @@ sealed class MenuInfo(
         "postre"
     )
 
+    data object Brownies : MenuInfo(
+        R.string.brownies,
+        R.drawable.brownies,
+        R.drawable.card_postre_brownies,
+        R.string.brownies_description,
+        R.string.brownies_price,
+        "postre"
+    )
+
+    data object Empanadas : MenuInfo(
+        R.string.empanadas,
+        R.drawable.empanadas,
+        R.drawable.card_postre_empanadas,
+        R.string.empanadas_description,
+        R.string.empanadas_price,
+        "postre"
+    )
+
+    data object RollosCanela : MenuInfo(
+        R.string.rollos_canela,
+        R.drawable.rollos_canela,
+        R.drawable.card_postre_rollos_canela,
+        R.string.rollos_canela_description,
+        R.string.rollos_canela_price,
+        "postre"
+    )
+
+    data object Yoggis : MenuInfo(
+        R.string.yoggis,
+        R.drawable.yoggis,
+        R.drawable.card_postre_yoggis,
+        R.string.yoggis_description,
+        R.string.yoggis_price,
+        "postre"
+    )
+
     // HELADOS
-    data object Helado1Bola : MenuInfo(
+    data object Helado : MenuInfo(
         R.string.helado_1_bola,
         R.drawable.helado,
         R.drawable.card_helado,
@@ -104,5 +140,86 @@ sealed class MenuInfo(
         R.string.helado_1_bola_price,
         "helado"
     )
+
+    data object Helado4Bolas : MenuInfo(
+        R.string.helado_4_bolas,
+        R.drawable.helado_copa,
+        R.drawable.card_helado_copa,
+        R.string.helado_4_bolas_description,
+        R.string.helado_4_bolas_price,
+        "helado"
+    )
+
     // BEBIDAS
+    data object SevenUpPersonal : MenuInfo(
+        R.string.seven_up_personal,
+        R.drawable.sevenup,
+        R.drawable.card_bebida_7up,
+        R.string.seven_up_personal_description,
+        R.string.seven_up_personal_price,
+        "bebida"
+    )
+
+    data object SevenUp1Lt : MenuInfo(
+        R.string.seven_up_1lt,
+        R.drawable.sevenup,
+        R.drawable.card_bebida_7up,
+        R.string.seven_up_1lt_description,
+        R.string.seven_up_1lt_price,
+        "bebida"
+    )
+
+    data object SporadePersonal : MenuInfo(
+        R.string.sporade_personal,
+        R.drawable.sporade,
+        R.drawable.card_bebida_sporade,
+        R.string.sporade_personal_description,
+        R.string.sporade_personal_price,
+        "bebida"
+    )
+
+    data object CocaColaPersonal : MenuInfo(
+        R.string.coca_cola_personal,
+        R.drawable.coca_cola,
+        R.drawable.card_bebida_coca_cola,
+        R.string.coca_cola_personal_description,
+        R.string.coca_cola_personal_price,
+        "bebida"
+    )
+
+    data object ConcordiaPersonal : MenuInfo(
+        R.string.concordia_personal,
+        R.drawable.concordia_mini,
+        R.drawable.card_bebida_concordia_mini,
+        R.string.concordia_personal_description,
+        R.string.concordia_personal_price,
+        "bebida"
+    )
+
+    data object Concordia1Lt : MenuInfo(
+        R.string.concordia_1lt,
+        R.drawable.concordia,
+        R.drawable.card_bebida_concordia,
+        R.string.concordia_1lt_description,
+        R.string.concordia_1lt_price,
+        "bebida"
+    )
+
+    data object FantaPersonal : MenuInfo(
+        R.string.fanta_personal,
+        R.drawable.fanta,
+        R.drawable.card_bebida_fanta,
+        R.string.fanta_personal_description,
+        R.string.fanta_personal_price,
+        "bebida"
+    )
+
+    data object IncaKolaPersonal : MenuInfo(
+        R.string.inca_kola_personal,
+        R.drawable.inca_kola,
+        R.drawable.card_bebida_inka_kola,
+        R.string.inca_kola_personal_description,
+        R.string.inca_kola_personal_price,
+        "bebida"
+    )
 }

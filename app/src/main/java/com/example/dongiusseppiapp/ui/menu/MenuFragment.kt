@@ -14,15 +14,7 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.dongiusseppiapp.databinding.FragmentMenuBinding
 import com.example.dongiusseppiapp.domain.model.MenuInfo
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaAmericana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaHawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.MediaOlivo
-import com.example.dongiusseppiapp.domain.model.MenuInfo.Olivos
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionAmericana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionHawaiana
-import com.example.dongiusseppiapp.domain.model.MenuInfo.PorcionOlivo
+import com.example.dongiusseppiapp.domain.model.MenuInfo.*
 import com.example.dongiusseppiapp.domain.model.MenuModel
 import com.example.dongiusseppiapp.ui.menu.adapter.MenuAdapter
 import kotlinx.coroutines.delay
@@ -58,9 +50,24 @@ class MenuFragment : Fragment() {
                 Olivos -> MenuModel.OLIVO
                 MediaOlivo -> MenuModel.MEDIA_OLIVO
                 PorcionOlivo -> MenuModel.PORCION_OLIVO
-                else -> {
-                    throw IllegalArgumentException("Menu not found")
-                }
+
+                ArrozConLeche -> MenuModel.ARROZ_CON_LECHE
+                Brownies -> MenuModel.BROWNIES
+                Empanadas -> MenuModel.EMPANADAS
+                RollosCanela -> MenuModel.ROLLOS_CANELA
+                Yoggis -> MenuModel.YOGGIS
+
+                Helado -> MenuModel.HELADO
+                Helado4Bolas -> MenuModel.HELADO_4_BOLAS
+
+                SevenUpPersonal -> MenuModel.SEVEN_UP_PERSONAL
+                SevenUp1Lt -> MenuModel.SEVEN_UP_1LT
+                SporadePersonal -> MenuModel.SPORADE_PERSONAL
+                CocaColaPersonal -> MenuModel.COCA_COLA_PERSONAL
+                ConcordiaPersonal -> MenuModel.CONCORDIA_PERSONAL
+                Concordia1Lt -> MenuModel.CONCORDIA_1LT
+                FantaPersonal -> MenuModel.FANTA_PERSONAL
+                IncaKolaPersonal -> MenuModel.INCA_KOLA_PERSONAL
             }
             findNavController().navigate(
                 MenuFragmentDirections.actionMenuFragmentToProductActivity(type)

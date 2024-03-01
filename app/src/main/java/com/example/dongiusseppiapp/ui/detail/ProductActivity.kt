@@ -12,7 +12,17 @@ import com.example.dongiusseppiapp.databinding.ActivityProductBinding
 import com.example.dongiusseppiapp.domain.model.MenuInfo
 import com.example.dongiusseppiapp.domain.model.MenuModel
 import com.example.dongiusseppiapp.domain.model.MenuModel.AMERICANA
+import com.example.dongiusseppiapp.domain.model.MenuModel.ARROZ_CON_LECHE
+import com.example.dongiusseppiapp.domain.model.MenuModel.BROWNIES
+import com.example.dongiusseppiapp.domain.model.MenuModel.COCA_COLA_PERSONAL
+import com.example.dongiusseppiapp.domain.model.MenuModel.CONCORDIA_1LT
+import com.example.dongiusseppiapp.domain.model.MenuModel.CONCORDIA_PERSONAL
+import com.example.dongiusseppiapp.domain.model.MenuModel.EMPANADAS
+import com.example.dongiusseppiapp.domain.model.MenuModel.FANTA_PERSONAL
 import com.example.dongiusseppiapp.domain.model.MenuModel.HAWAIANA
+import com.example.dongiusseppiapp.domain.model.MenuModel.HELADO
+import com.example.dongiusseppiapp.domain.model.MenuModel.HELADO_4_BOLAS
+import com.example.dongiusseppiapp.domain.model.MenuModel.INCA_KOLA_PERSONAL
 import com.example.dongiusseppiapp.domain.model.MenuModel.MEDIA_AMERICANA
 import com.example.dongiusseppiapp.domain.model.MenuModel.MEDIA_HAWAIANA
 import com.example.dongiusseppiapp.domain.model.MenuModel.MEDIA_OLIVO
@@ -20,6 +30,11 @@ import com.example.dongiusseppiapp.domain.model.MenuModel.OLIVO
 import com.example.dongiusseppiapp.domain.model.MenuModel.PORCION_AMERICANA
 import com.example.dongiusseppiapp.domain.model.MenuModel.PORCION_HAWAIANA
 import com.example.dongiusseppiapp.domain.model.MenuModel.PORCION_OLIVO
+import com.example.dongiusseppiapp.domain.model.MenuModel.ROLLOS_CANELA
+import com.example.dongiusseppiapp.domain.model.MenuModel.SEVEN_UP_1LT
+import com.example.dongiusseppiapp.domain.model.MenuModel.SEVEN_UP_PERSONAL
+import com.example.dongiusseppiapp.domain.model.MenuModel.SPORADE_PERSONAL
+import com.example.dongiusseppiapp.domain.model.MenuModel.YOGGIS
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -58,6 +73,25 @@ class ProductActivity() : AppCompatActivity() {
             OLIVO -> MenuInfo.Olivos
             MEDIA_OLIVO -> MenuInfo.MediaOlivo
             PORCION_OLIVO -> MenuInfo.PorcionOlivo
+
+            ARROZ_CON_LECHE -> MenuInfo.ArrozConLeche
+            BROWNIES -> MenuInfo.Brownies
+            EMPANADAS -> MenuInfo.Empanadas
+            ROLLOS_CANELA -> MenuInfo.RollosCanela
+            YOGGIS -> MenuInfo.Yoggis
+
+            HELADO -> MenuInfo.Helado
+
+
+            HELADO_4_BOLAS -> MenuInfo.Helado4Bolas
+            SEVEN_UP_PERSONAL -> MenuInfo.SevenUpPersonal
+            SEVEN_UP_1LT -> MenuInfo.SevenUp1Lt
+            SPORADE_PERSONAL -> MenuInfo.SporadePersonal
+            COCA_COLA_PERSONAL -> MenuInfo.CocaColaPersonal
+            CONCORDIA_PERSONAL -> MenuInfo.ConcordiaPersonal
+            CONCORDIA_1LT -> MenuInfo.Concordia1Lt
+            FANTA_PERSONAL -> MenuInfo.FantaPersonal
+            INCA_KOLA_PERSONAL -> MenuInfo.IncaKolaPersonal
         }
     }
 

@@ -27,7 +27,7 @@
             android:backgroundTint="#fff"
             android:elevation="1dp"
             android:padding="10dp"
-            android:src="@drawable/ic_map"
+            android:src="@drawable/ic_location"
             android:tint="@color/md_theme_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +62,7 @@
         android:layout_marginStart="10dp"
         android:text="Comunidad"
         android:translationY="-80dp"
-        app:icon="@drawable/ic_map"
+        app:icon="@drawable/ic_chat_selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

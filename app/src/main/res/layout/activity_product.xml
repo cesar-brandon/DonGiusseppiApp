@@ -147,7 +147,7 @@
         android:text="Añadir al carrito"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:icon="@drawable/ic_menu"
+        app:icon="@drawable/ic_cart_selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
