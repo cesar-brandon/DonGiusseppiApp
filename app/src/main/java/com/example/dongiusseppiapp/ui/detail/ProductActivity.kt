@@ -34,6 +34,10 @@ class ProductActivity : AppCompatActivity() {
         binding = ActivityProductBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initUI()
+
+        binding.ivFavorite.setOnClickListener {
+            it.isSelected = !it.isSelected
+        }
     }
 
     private fun initUI() {
@@ -93,7 +97,7 @@ class ProductActivity : AppCompatActivity() {
     }
 
     private suspend fun delaySuccessState(state: ProductState.Success) {
-        kotlinx.coroutines.delay(1000)
+        kotlinx.coroutines.delay(500)
         successState(state)
     }
 

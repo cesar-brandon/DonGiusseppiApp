@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.dongiusseppiapp.databinding.FragmentCategoryBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
@@ -29,14 +30,22 @@ class CategoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        CoroutineScope(Dispatchers.Main).launch {
-            delay(1000)
-            binding.lottieLoading.visibility = View.INVISIBLE
-
-            binding.ivCategoryPizza.visibility = View.VISIBLE
-            binding.ivCategoryDessert.visibility = View.VISIBLE
-            binding.ivCategoryIcecream.visibility = View.VISIBLE
-            binding.ivCategorySoda.visibility = View.VISIBLE
+        binding.ivCategoryPizza.setOnClickListener {
+            navigateToMenu("pizza")
         }
+        binding.ivCategoryDessert.setOnClickListener {
+            navigateToMenu("postre")
+        }
+        binding.ivCategoryIcecream.setOnClickListener {
+            navigateToMenu("helado")
+        }
+        binding.ivCategorySoda.setOnClickListener {
+            navigateToMenu("bebida")
+        }
+    }
+
+    private fun navigateToMenu(category: String) {
+        val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment(category)
+        findNavController().navigate(action)
     }
 }

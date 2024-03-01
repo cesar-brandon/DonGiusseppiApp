@@ -10,8 +10,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
-import com.bumptech.glide.Glide
 import com.example.dongiusseppiapp.databinding.FragmentMenuBinding
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Americana
 import com.example.dongiusseppiapp.domain.model.MenuInfo.Hawaiana
@@ -28,6 +28,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MenuFragment : Fragment() {
+    private val args: MenuFragmentArgs by navArgs()
     private val menuViewModel: MenuViewModel by viewModels()
     private lateinit var menuAdapter: MenuAdapter
     private var _binding: FragmentMenuBinding? = null
@@ -35,6 +36,7 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        menuViewModel.setCategory(args.category)
         initUI()
     }
 
@@ -65,7 +67,11 @@ class MenuFragment : Fragment() {
             layoutManager = GridLayoutManager(requireContext(), 2).apply {
                 spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
                     override fun getSpanSize(position: Int): Int {
-                        return if (position < 3) 2 else 1
+                        return if (menuViewModel.category.value == "pizza" && position < 3) {
+                            2
+                        } else {
+                            1
+                        }
                     }
                 }
             }
@@ -80,7 +86,7 @@ class MenuFragment : Fragment() {
                     binding.lottieLoading.visibility = View.VISIBLE
                     binding.rvMenu.visibility = View.INVISIBLE
 
-                    delay(2000)
+                    delay(1000)
 
                     binding.rvMenu.visibility = View.VISIBLE
                     menuAdapter.updateList(menu)

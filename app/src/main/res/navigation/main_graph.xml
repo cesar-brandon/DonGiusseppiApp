@@ -14,7 +14,11 @@
         android:id="@+id/categoryFragment"
         android:name="com.example.dongiusseppiapp.ui.category.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.dongiusseppiapp.ui.info.InfoFragment"
@@ -28,6 +32,10 @@
         <action
             android:id="@+id/action_menuFragment_to_productActivity"
             app:destination="@id/productActivity" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="pizza" />
     </fragment>
     <activity
         android:id="@+id/productActivity"

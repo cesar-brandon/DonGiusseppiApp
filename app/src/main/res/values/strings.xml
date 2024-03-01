@@ -6,6 +6,12 @@
     <string name="favorite">Favoritos</string>
     <string name="info">Información</string>
     <string name="menu">Menú</string>
+    <!--CATEGORIAS-->
+    <string name="pizza">pizza</string>
+    <string name="helado">helado</string>
+    <string name="postre">postre</string>
+    <string name="bebida">bebida</string>
+
     <!--AMERICANA-->
     <string name="americana">Pizza Americana</string>
     <string name="americana_description">Masa crujiente. salsa de tomate. jamón. salami y queso parmesano.</string>

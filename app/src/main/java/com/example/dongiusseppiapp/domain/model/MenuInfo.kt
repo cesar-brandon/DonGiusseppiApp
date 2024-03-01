@@ -7,7 +7,8 @@ sealed class MenuInfo(
     val image: Int,
     val cardImage: Int,
     val description: Int,
-    val price: Int
+    val price: Int,
+    val category: String = "pizza"
 ) {
     data object Americana : MenuInfo(
         R.string.americana,
