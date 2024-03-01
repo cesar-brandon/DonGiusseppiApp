@@ -23,21 +23,18 @@ import com.example.dongiusseppiapp.domain.model.MenuModel.PORCION_OLIVO
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@Suppress("UNREACHABLE_CODE")
 @AndroidEntryPoint
-class ProductActivity : AppCompatActivity() {
+class ProductActivity() : AppCompatActivity() {
     private lateinit var binding: ActivityProductBinding
     private val productViewModel: ProductViewModel by viewModels()
-
     private val args: ProductActivityArgs by navArgs()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProductBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initUI()
-
-        binding.ivFavorite.setOnClickListener {
-            it.isSelected = !it.isSelected
-        }
     }
 
     private fun initUI() {
@@ -46,11 +43,7 @@ class ProductActivity : AppCompatActivity() {
 
         val menuInfo = getMenuInfo(args.type)
         productViewModel.setProductName(
-            menuInfo.name,
-            menuInfo.image,
-            menuInfo.cardImage,
-            menuInfo.description,
-            menuInfo.price
+            menuInfo.name, menuInfo.image, menuInfo.cardImage, menuInfo.description, menuInfo.price
         )
     }
 
@@ -72,16 +65,45 @@ class ProductActivity : AppCompatActivity() {
         binding.ivChevronBack.setOnClickListener {
             onBackPressed()
         }
+        binding.ivFavorite.setOnClickListener {
+            it.isSelected = !it.isSelected
+        }
+        binding.btnIncrease.setOnClickListener {
+            productViewModel.incrementProductCount()
+        }
+        binding.btnDecrease.setOnClickListener {
+            productViewModel.decrementProductCount()
+        }
+        binding.btnAddToCart.setOnClickListener {
+            val product = productViewModel.state.value as ProductState.Success
+            val quantity = productViewModel.productCount.value
+
+            finish()
+        }
     }
 
     private fun initUIState() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                productViewModel.state.collect {
-                    when (it) {
-                        ProductState.Loading -> loadingState()
-                        is ProductState.Error -> errorState(it.message)
-                        is ProductState.Success -> delaySuccessState(it)
+                launch {
+                    productViewModel.state.collect {
+                        when (it) {
+                            ProductState.Loading -> loadingState()
+                            is ProductState.Error -> errorState(it.message)
+                            is ProductState.Success -> delaySuccessState(it)
+                        }
+                    }
+                }
+
+                launch {
+                    productViewModel.productCount.collect { count ->
+                        binding.tvProductCount.text = count.toString()
+                    }
+                }
+
+                launch {
+                    productViewModel.totalPrice.collect { price ->
+                        binding.tvProductPrice.text = "S/.${"%.2f".format(price)}"
                     }
                 }
             }
@@ -105,6 +127,7 @@ class ProductActivity : AppCompatActivity() {
         lifecycleScope.launch {
             binding.progressBar.isVisible = false
             binding.ivFavorite.isVisible = true
+            binding.tvProductPrice.isVisible = true
             binding.tvProductName.text = getString(state.name)
             binding.ivProductImage.setImageResource(state.image)
             binding.tvProductDescription.text = getString(state.description)

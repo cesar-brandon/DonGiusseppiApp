@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.DonGiusseppiApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary</item>
@@ -62,4 +62,18 @@
     <style name="Theme.DonGiusseppiApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.DonGiusseppiApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Button Variants -->
+    <style name="OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/md_theme_primaryContainer</item>
+        <item name="strokeColor">@color/md_theme_primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.Button.OutlinedButton
+        </item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.OutlinedButton" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

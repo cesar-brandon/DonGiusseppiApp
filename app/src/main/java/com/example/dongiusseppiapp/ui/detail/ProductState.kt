@@ -8,7 +8,8 @@ sealed class ProductState {
         val image: Int,
         val cardImage: Int,
         val description: Int,
-        val price: Int
+        val price: Int,
+        val category: String = "pizza"
     ) :
         ProductState()
 }

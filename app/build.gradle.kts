@@ -44,6 +44,7 @@ android {
 dependencies {
     val navVersion = "2.4.0-alpha10"
     val lottieVersion = "6.3.0"
+    val room_version = "2.6.1"
 
     // Lifecycle
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
@@ -63,6 +64,10 @@ dependencies {
     // Glide Library
     implementation("com.github.bumptech.glide:glide:4.16.0")
     kapt("com.github.bumptech.glide:compiler:4.16.0")
+
+    // DataPreference
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    implementation("androidx.datastore:datastore-preferences-core:1.0.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

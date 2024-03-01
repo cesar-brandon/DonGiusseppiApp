@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/parent"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="wrap_content"
     android:layout_margin="30dp"
     android:background="@drawable/rounded_lg"
     android:backgroundTint="@color/md_theme_background"
@@ -11,6 +11,7 @@
     android:paddingHorizontal="16dp">
 
     <TextView
+        android:id="@+id/tv_cart_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mi orden"
@@ -20,10 +21,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cart_title"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintWidth_max="300dp"
+        app:layout_constraintWidth_min="200dp" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_cart">
 
         <TextView
             android:id="@+id/tvTotal"
